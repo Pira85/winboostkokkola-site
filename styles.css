@@ -7,34 +7,35 @@ body {
   padding: 0;
 }
 
-/* Navigointivalikko */
+/* Navigointipalkki */
 nav {
   background-color: #004080;
-  padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
+  list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin: 0 25px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.1em;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #ffcc00;
 }
 
 /* Hero-otsikko */
@@ -55,13 +56,14 @@ header img {
   margin-top: 10px;
 }
 
-/* Sisältö */
+/* Sisältölaatikko */
 main {
   max-width: 900px;
-  margin: auto;
+  margin: 30px auto;
   padding: 20px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
 }
 
 /* Otsikot */
@@ -90,9 +92,11 @@ a:hover {
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 20px;
   background-color: #004080;
   color: white;
-  margin-top: 40px;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.95em;
+  margin-top: 60px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
