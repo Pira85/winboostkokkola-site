@@ -17,12 +17,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #f9f9f9; border-top: 1px solid #ccc; padding: 15px; font-family: sans-serif; display: none; z-index: 9999;">
+  <p style="margin: 0; font-size: 16px;">
+    Käytämme evästeitä parantaaksemme käyttökokemusta ja näyttääksemme mainoksia (Google AdSense). 
+    <a href="#tietosuoja" style="color: #0077cc;">Lue tietosuojaseloste</a>.
+  </p>
+  <div style="margin-top: 10px;">
+    <button onclick="acceptCookies()" style="padding: 8px 12px; background: #0077cc; color: white; border: none; border-radius: 4px;">Hyväksy</button>
+    <button onclick="declineCookies()" style="padding: 8px 12px; background: #ccc; color: black; border: none; border-radius: 4px; margin-left: 10px;">Hylkää</button>
+  </div>
+</div>
 
   <nav>
     <ul>
       <li><a href="index.html">Etusivu</a></li>
       <li><a href="index.html#hinnasto">Hinnasto</a></li>
       <li><a href="windows11.html" target="_blank" rel="noopener noreferrer">Miksi valita Windows 11</a></li>
+      <a href="tietosuojaseloste.html" target="_blank">Lue tietosuojaseloste</a>
     </ul>
   </nav>
 
@@ -104,7 +115,26 @@
 
   <footer>
     <p>&copy; 2025 Winboost Kokkola – Windows 11 asennus ja IT-palvelut Kokkolassa</p>
+    <p><a href="tietosuojaseloste.html">Tietosuojaseloste</a></p>
   </footer>
+  <script>
+  function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+
+  function declineCookies() {
+    localStorage.setItem('cookieConsent', 'declined');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+
+  window.onload = function() {
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  };
+</script>
 
 </body>
 </html>
