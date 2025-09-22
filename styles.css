@@ -100,6 +100,113 @@ footer {
   border-top: 4px solid #003366;
   box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
 }
+/* Yleinen ulkoasu */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f8fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigointipalkki */
+nav {
+  background-color: #004080;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Hero-otsikko */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6f0ff;
+}
+
+header h1 {
+  color: #004080;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+header img {
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+/* Sisältölaatikko */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+/* Otsikot */
+h2 {
+  color: #004080;
+  margin-top: 30px;
+}
+
+/* Listat */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Linkit */
+a {
+  color: #0066cc;
+}
+
+a:hover {
+  color: #004080;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 40px 30px;
+  font-size: 1em;
+  margin-top: 80px;
+  border-top: 4px solid #003366;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.6;
+}
 
 footer p {
   margin: 0;
