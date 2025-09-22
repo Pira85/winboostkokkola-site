@@ -90,13 +90,18 @@ a:hover {
   color: #004080;
 }
 
-/* Footer */
 footer {
   background-color: #004080;
   color: white;
   text-align: center;
-  padding: 30px 20px;
-  font-size: 0.95em;
-  margin-top: 60px;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  padding: 40px 30px;
+  font-size: 1em;
+  margin-top: 80px;
+  border-top: 4px solid #003366;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.6;
 }
