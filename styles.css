@@ -1,0 +1,90 @@
+/* Yleinen ulkoasu */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigointivalikko */
+nav {
+  background-color: #004080;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero-otsikko */
+header h1 {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6f0ff;
+  color: #004080;
+  font-size: 2em;
+}
+
+/* Sisältö */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Otsikot */
+h2 {
+  color: #004080;
+  margin-top: 30px;
+}
+
+/* Listat */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Linkit */
+a {
+  color: #0066cc;
+}
+
+a:hover {
+  color: #004080;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004080;
+  color: white;
+  margin-top: 40px;
+}
