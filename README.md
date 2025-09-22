@@ -45,6 +45,7 @@ Kokkola ja lähialueet — kotikäynnit ja noutopalvelu sovittaessa.
 ## 📞 Yhteydenotto & varaus
 Sähköposti: **winboostkokkola@outlook.com**  
 Varaa aika / kysy tarjousta lomakkeella verkkosivulla tai laita sähköpostia.
+Puhelin: 0440600616
 
 ---
 
