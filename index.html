@@ -2,113 +2,251 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WinBoostKokkola – Windows 11 päivitykset & tietokonehuolto Kokkolassa</title>
-  <meta name="description" content="WinBoostKokkola tarjoaa Windows 11 päivityksiä, varmuuskopiointia ja tietokonehuoltoa Kokkolassa. Luotettavaa ja nopeaa palvelua Kokkolassa.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WinBoostKokkola – Windows 10 & Windows 11 päivitykset | Tietokonehuolto Kokkolassa</title>
+  <meta name="description" content="WinBoostKokkola: Windows 11 ja Windows 10 päivitykset, varmuuskopiointi, koneen nopeutus ja tietokonehuolto Kokkolassa. Paikallinen, nopea ja turvallinen palvelu.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://winboostkokkola.fi/">
+  <meta name="keywords" content="Windows 11 päivitys Kokkola, Windows 10 päivitys Kokkola, tietokonehuolto Kokkola, Windows 11 asennus, Windows päivitys, koneen nopeutus, SSD asennus, WinBoostKokkola">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="WinBoostKokkola – Windows 10 & Windows 11 päivitykset | Tietokonehuolto Kokkolassa">
+  <meta property="og:description" content="Windows 11/10 päivitykset, varmuuskopiointi ja huolto Kokkolassa. Ota yhteyttä – nopea ja turvallinen palvelu.">
+  <meta property="og:url" content="https://winboostkokkola.fi/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fi_FI">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "WinBoostKokkola",
+    "image": "https://winboostkokkola.fi/favicon.ico",
+    "address": { "@type": "PostalAddress", "addressLocality": "Kokkola", "addressCountry": "FI" },
+    "url": "https://winboostkokkola.fi",
+    "telephone": "+358440600616",
+    "email": "winboostkokkola@outlook.com",
+    "description": "Windows 11 ja Windows 10 päivitykset, varmuuskopiointi ja tietokonehuolto Kokkolassa."
+  }
+  </script>
+
   <style>
-    body { margin:0; font-family: 'Poppins', sans-serif; background:#f5f7fa; color:#333; line-height:1.6; }
-    h1,h2,h3 { margin:0 0 1rem; font-weight:700; }
-    a { color:inherit; text-decoration:none; }
-    .btn { display:inline-block; margin:0.5rem; padding:0.75rem 1.5rem; border-radius:6px; font-weight:600; transition:0.2s; }
-    .btn-primary { background:#0078D7; color:#fff; }
-    .btn-primary:hover { background:#005fa8; }
-    header { background:linear-gradient(135deg,#0078D7,#3399ff); color:#fff; text-align:center; padding:4rem 1rem; }
-    header h1 { font-size:2.2rem; }
-    header p { font-size:1.1rem; margin-bottom:1.5rem; }
-    section { padding:3rem 1rem; max-width:1100px; margin:auto; }
-    .grid { display:grid; gap:1.5rem; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); }
-    .card { background:#fff; border-radius:10px; padding:1.5rem; box-shadow:0 4px 8px rgba(0,0,0,0.08); text-align:center; }
-    .card h3 { color:#0078D7; margin-bottom:0.5rem; }
-    #win11 { background:#0078D7; color:#fff; border-radius:10px; padding:2rem; text-align:center; }
-    #win11 .btn { background:#fff; color:#0078D7; }
-    #why ul, #faq div { list-style:none; padding:0; margin:0; }
-    #why li::before { content:"✔️ "; }
-    #faq div { background:#fff; border-radius:8px; margin-bottom:1rem; padding:1rem; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
-    form { display:grid; gap:1rem; max-width:500px; margin:auto; }
-    form input, form textarea { padding:0.75rem; border:1px solid #ccc; border-radius:6px; }
-    form button { background:#0078D7; color:#fff; border:none; padding:0.75rem; border-radius:6px; font-size:1rem; cursor:pointer; transition:0.2s; }
-    form button:hover { background:#005fa8; }
-    footer { background:#1c1c1c; color:#fff; text-align:center; padding:1.5rem; margin-top:2rem; font-size:0.9rem; }
+    :root{
+      --blue:#0078D7;
+      --blue-2:#3399ff;
+      --text:#333;
+      --bg:#f5f7fa;
+      --card:#fff;
+      --shadow:0 8px 16px rgba(0,0,0,.08);
+      --shadow-sm:0 4px 8px rgba(0,0,0,.06);
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    h1,h2,h3{margin:0 0 1rem;font-weight:700}
+    .container{max-width:1150px;margin:0 auto;padding:0 16px}
+
+    /* Header / hero */
+    header{background:linear-gradient(135deg,var(--blue),var(--blue-2));color:#fff;padding:20px 0 56px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{
+      display:flex;align-items:center;gap:12px;background:#ffffff14;
+      padding:8px 12px;border-radius:10px;border:1px solid #ffffff30
+    }
+    .logo svg{display:block}
+    .logo span{font-weight:700;font-size:18px;letter-spacing:.2px}
+    .top-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;font-weight:600;transition:.2s;white-space:nowrap}
+    .btn-primary{background:#fff;color:var(--blue)}
+    .btn-primary:hover{transform:translateY(-1px);box-shadow:var(--shadow-sm)}
+    .btn-outline{border:2px solid #fff;color:#fff}
+    .btn-outline:hover{background:#ffffff18}
+    .hero{text-align:center;margin-top:36px}
+    .hero h1{font-size:clamp(24px,4.2vw,36px);margin-bottom:10px}
+    .hero p{opacity:.95;margin-bottom:18px}
+
+    /* Sections */
+    section{padding:56px 0}
+    .grid{display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center}
+    .card h3{color:var(--blue);margin-top:6px}
+    .span-3{grid-column:span 3}
+    .span-4{grid-column:span 4}
+    .span-6{grid-column:span 6}
+    .span-12{grid-column:1/-1}
+
+    /* Windows 11 callout */
+    #win11 .callout{background:var(--blue);color:#fff;border-radius:var(--radius);padding:28px;text-align:center;box-shadow:var(--shadow)}
+    #win11 .callout .btn{background:#fff;color:var(--blue)}
+
+    /* Pricing */
+    #pricing .price{font-size:26px;font-weight:700;margin-top:8px}
+
+    /* Why choose & Process cards share style via .card */
+
+    /* FAQ */
+    #faq .qa{background:var(--card);border-radius:10px;box-shadow:var(--shadow-sm);padding:16px}
+
+    /* Contact */
+    #contact .wrap{background:var(--blue);color:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+    #contact a{color:#fff;text-decoration:underline}
+    form{display:grid;gap:12px;max-width:540px;margin:16px auto 0}
+    input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #e3e3e3;font:inherit}
+    textarea{min-height:120px;resize:vertical}
+    form button{background:#fff;color:var(--blue);border:none;padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer;transition:.2s}
+    form button:hover{background:#f1f5ff;transform:translateY(-1px)}
+
+    /* Footer */
+    footer{background:#101318;color:#fff;padding:22px 0;text-align:center;margin-top:56px}
+    footer a{color:#fff;text-decoration:underline}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .span-3{grid-column:span 6}
+      .span-4{grid-column:span 6}
+      .span-6{grid-column:1/-1}
+    }
+    @media (max-width:640px){
+      .topbar{flex-direction:column;align-items:flex-start}
+      .top-actions{align-self:stretch;justify-content:center}
+      .logo{align-self:center}
+      .span-3,.span-4{grid-column:1/-1}
+      section{padding:44px 0}
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Windows 11 päivitykset & tietokonehuolto Kokkolassa</h1>
-  <p>Luotettavaa ja turvallista palvelua – varmuuskopiointi aina mukana</p>
-  <a href="tel:+358440600616" class="btn btn-primary">📞 Soita heti</a>
-  <a href="#contact" class="btn btn-primary">📧 Ota yhteyttä</a>
-</header>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <!-- Logo (inline SVG) -->
+        <div class="logo" aria-label="WinBoostKokkola logo" role="img">
+          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect width="32" height="32" rx="6" fill="#fff"></rect>
+            <path d="M4 6h10v10H4zM18 6h10v10H18zM4 20h10v6H4zM18 20h10v6H18z" fill="#0078D7"/>
+          </svg>
+          <span>WinBoostKokkola</span>
+        </div>
+        <div class="top-actions">
+          <a href="tel:+358440600616" class="btn btn-primary">📞 Soita heti</a>
+          <a href="#contact" class="btn btn-outline">📧 Ota yhteyttä</a>
+        </div>
+      </div>
 
-<section id="services">
-  <h2>Palvelut</h2>
-  <div class="grid">
-    <div class="card">💻<h3>Windows 11 päivitykset</h3><p>Myös vanhempiin koneisiin.</p></div>
-    <div class="card">💾<h3>Varmuuskopiointi</h3><p>Tiedostojen varmuuskopiointi ja palautus.</p></div>
-    <div class="card">⚡<h3>Koneen nopeutus</h3><p>SSD-asennus ja järjestelmän huolto.</p></div>
-    <div class="card">🛠️<h3>Käyttöjärjestelmän asennukset</h3><p>Windows ja muut päivitykset.</p></div>
-  </div>
-</section>
+      <div class="hero">
+        <h1>Windows 10 &amp; Windows 11 päivitykset ja tietokonehuolto Kokkolassa</h1>
+        <p>Paikallinen, nopea ja turvallinen palvelu. Varmuuskopiointi &amp; palautus sisältyy aina Windows-päivityksiin.</p>
+      </div>
+    </div>
+  </header>
 
-<section id="win11">
-  <h2>Windows 11 päivitys</h2>
-  <p>Windows 11 tuo vakautta, nopeutta ja turvallisuutta. Päivitämme koneesi puolestasi – varmuuskopiointi ja tiedostojen palautus sisältyy aina.</p>
-  <a href="#contact" class="btn">Tilaa Windows 11 päivitys</a>
-</section>
+  <!-- Palvelut -->
+  <section id="services">
+    <div class="container">
+      <h2>Palvelut</h2>
+      <div class="grid" style="margin-top:16px">
+        <div class="card span-3">💻<h3>Windows 11 päivitykset</h3><p>Myös vanhempiin ja “tukemattomiin” koneisiin.</p></div>
+        <div class="card span-3">💾<h3>Varmuuskopiointi</h3><p>Tiedostojen varmistus ja palautus turvallisesti.</p></div>
+        <div class="card span-3">⚡<h3>Koneen nopeutus</h3><p>SSD-asennus, puhdistus ja käynnistyksen optimointi.</p></div>
+        <div class="card span-3">🛠️<h3>Asennukset & huolto</h3><p>Windows 10/11, ajurit ja perushuollot.</p></div>
+      </div>
+    </div>
+  </section>
 
-<section id="pricing">
-  <h2>Hinnasto</h2>
-  <div class="grid">
-    <div class="card"><h3>Windows 10 → 11 (tuettu)</h3><p><strong>49 €</strong></p></div>
-    <div class="card"><h3>Windows 10 → 11 (tukematon)</h3><p><strong>60 €</strong></p></div>
-    <div class="card"><h3>Koneen nopeutus</h3><p><strong>59 €</strong></p></div>
-    <div class="card"><h3>Muut huollot</h3><p><strong>29 €/h</strong></p></div>
-  </div>
-</section>
+  <!-- Windows 11 callout -->
+  <section id="win11">
+    <div class="container">
+      <div class="callout">
+        <h2>Windows 11 päivitys Kokkolassa</h2>
+        <p style="margin:10px 0 14px">Saat modernin ja turvallisen järjestelmän. Me päivitämme – sinä jatkat käyttöä. Varmuuskopiointi kuuluu hintaan.</p>
+        <a href="#contact" class="btn">Tilaa Windows 11 päivitys</a>
+      </div>
+    </div>
+  </section>
 
-<section id="why">
-  <h2>Miksi valita WinBoostKokkola?</h2>
-  <ul>
-    <li>Paikallinen ja nopea palvelu Kokkolassa</li>
-    <li>Varmuuskopiointi ja tietojen palautus aina mukana</li>
-    <li>Henkilökohtainen ja asiakaslähtöinen ote</li>
-  </ul>
-</section>
+  <!-- Hinnasto -->
+  <section id="pricing">
+    <div class="container">
+      <h2>Hinnasto</h2>
+      <div class="grid" style="margin-top:16px">
+        <div class="card span-3"><h3>Windows 10 → 11 (tuettu)</h3><div class="price">49 €</div></div>
+        <div class="card span-3"><h3>Windows 10 → 11 (tukematon)</h3><div class="price">60 €</div></div>
+        <div class="card span-3"><h3>Koneen nopeutus</h3><div class="price">59 €</div><p style="margin:6px 0 0">SSD + huolto</p></div>
+        <div class="card span-3"><h3>Muut huollot</h3><div class="price">29 €/h</div></div>
+      </div>
+    </div>
+  </section>
 
-<section id="process">
-  <h2>Näin se toimii</h2>
-  <ol>
-    <li>Ota yhteyttä ja varaa aika</li>
-    <li>Varmistamme tiedostosi ja päivitämme järjestelmän</li>
-    <li>Palautamme tiedostot ja varmistamme, että kaikki toimii</li>
-  </ol>
-</section>
+  <!-- Miksi valita -->
+  <section id="why">
+    <div class="container">
+      <h2>Miksi valita WinBoostKokkola?</h2>
+      <div class="grid" style="margin-top:16px">
+        <div class="card span-4">⚡<h3>Nopea palvelu</h3><p>Paikallisesti Kokkolassa – ilman turhaa odottelua.</p></div>
+        <div class="card span-4">💾<h3>Turvallinen</h3><p>Tiedostot varmuuskopioidaan ja palautetaan aina.</p></div>
+        <div class="card span-4">👨‍💻<h3>Henkilökohtainen</h3><p>Selkeä yhteydenpito ja sovitut hinnat, ei yllätyksiä.</p></div>
+      </div>
+    </div>
+  </section>
 
-<section id="faq">
-  <h2>Usein kysytyt kysymykset</h2>
-  <div><strong>Tukeeko koneeni Windows 11:ää?</strong><br>Selvitämme asian puolestasi ja kerromme, onnistuuko päivitys.</div>
-  <div><strong>Mitä jos päivitys epäonnistuu?</strong><br>Palautamme koneesi Windows 10 -tilaan ja tiedostosi säilyvät.</div>
-  <div><strong>Mitä jos tiedot katoavat?</strong><br>Tiedostot varmuuskopioidaan aina ennen päivitystä – ne palautetaan lopuksi.</div>
-</section>
+  <!-- Prosessi -->
+  <section id="process">
+    <div class="container">
+      <h2>Näin se toimii</h2>
+      <div class="grid" style="margin-top:16px">
+        <div class="card span-4">📞<h3>Ota yhteyttä</h3><p>Varaa aika puhelimitse tai lomakkeella.</p></div>
+        <div class="card span-4">💽<h3>Varmistus & päivitys</h3><p>Varmistamme tiedostot ja päivitämme Windowsin.</p></div>
+        <div class="card span-4">✅<h3>Valmista!</h3><p>Palautamme tiedostot ja varmistamme toimivuuden.</p></div>
+      </div>
+    </div>
+  </section>
 
-<section id="contact">
-  <h2>Ota yhteyttä</h2>
-  <p>Puhelin: <a href="tel:+358440600616">044 060 0616</a><br>
-     Sähköposti: <a href="mailto:winboostkokkola@outlook.com">winboostkokkola@outlook.com</a></p>
-  <form action="https://formspree.io/f/mnngqgqp" method="POST">
-    <input type="text" name="name" placeholder="Nimi" required>
-    <input type="email" name="_replyto" placeholder="Sähköposti" required>
-    <input type="text" name="phone" placeholder="Puhelin (valinnainen)">
-    <textarea name="message" rows="5" placeholder="Viesti" required></textarea>
-    <button type="submit">Lähetä viesti</button>
-  </form>
-</section>
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <h2>Usein kysytyt kysymykset</h2>
+      <div class="grid" style="margin-top:16px">
+        <div class="qa span-6"><strong>Tukeeko koneeni Windows 11:ää?</strong><br>Selvitämme puolestasi (TPM, Secure Boot, prosessori). Tarvittaessa päivitämme myös “tukemattomat” koneet.</div>
+        <div class="qa span-6"><strong>Mitä jos päivitys epäonnistuu?</strong><br>Palautamme Windows 10 -tilaan ja tiedostosi säilyvät varmuuskopioiden ansiosta.</div>
+        <div class="qa span-6"><strong>Mitä jos tiedot katoavat?</strong><br>Varmuuskopiointi tehdään aina ennen muutoksia. Tiedostot palautetaan päivityksen jälkeen.</div>
+        <div class="qa span-6"><strong>Teettekö myös Windows 10 -huoltoja?</strong><br>Kyllä – asennukset, ajurit, nopeutus ja perushuollot.</div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2025 WinBoostKokkola – <a href="tietosuojaseloste.html" style="color:white">Tietosuojaseloste</a></p>
-</footer>
+  <!-- Yhteys -->
+  <section id="contact">
+    <div class="container">
+      <div class="wrap">
+        <h2>Ota yhteyttä</h2>
+        <p>Puhelin: <a href="tel:+358440600616">044 060 0616</a> &nbsp;•&nbsp; Sähköposti: <a href="mailto:winboostkokkola@outlook.com">winboostkokkola@outlook.com</a></p>
+        <form action="https://formspree.io/f/mnngqgqp" method="POST">
+          <input type="hidden" name="_subject" value="Uusi yhteydenotto – WinBoostKokkola">
+          <input type="text" name="name" placeholder="Nimi" aria-label="Nimi" required>
+          <input type="email" name="_replyto" placeholder="Sähköposti" aria-label="Sähköposti" required>
+          <input type="text" name="phone" placeholder="Puhelin (valinnainen)" aria-label="Puhelin">
+          <textarea name="message" placeholder="Viesti" aria-label="Viesti" required></textarea>
+          <button type="submit">Lähetä viesti</button>
+        </form>
+        <p style="margin-top:10px;opacity:.9">Lähettämällä viestin hyväksyt <a href="tietosuojaseloste.html">tietosuojaselosteen</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 WinBoostKokkola • <a href="tietosuojaseloste.html">Tietosuojaseloste</a></p>
+    </div>
+  </footer>
 
 </body>
 </html>
