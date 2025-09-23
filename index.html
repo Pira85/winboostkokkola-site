@@ -5,11 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WinBoostKokkola – Windows 11 päivitykset & tietokonehuolto Kokkolassa</title>
   <meta name="description" content="WinBoostKokkola tarjoaa Windows 11 päivityksiä, varmuuskopiointia ja tietokonehuoltoa Kokkolassa. Luotettavaa ja nopeaa palvelua.">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f9f9f9; color:#333; }
+    header { background:#0078D7; color:white; padding:2rem 1rem; text-align:center; }
+    header svg { max-width:200px; margin-bottom:1rem; }
+    header h1 { margin:0.5rem 0; font-size:2rem; }
+    .btn { display:inline-block; margin:0.5rem; padding:0.75rem 1.25rem;
+           background:white; color:#0078D7; text-decoration:none; border-radius:5px; font-weight:bold; }
+    section { padding:2rem 1rem; max-width:900px; margin:auto; }
+    h2 { color:#0078D7; margin-bottom:1rem; }
+    .pricing { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+    .card { background:white; border:1px solid #ddd; border-radius:8px; padding:1rem; text-align:center; }
+    .card h3 { margin-top:0; color:#0078D7; }
+    form { display:grid; gap:1rem; max-width:500px; margin:auto; }
+    form input, form textarea { padding:0.75rem; border:1px solid #ccc; border-radius:5px; width:100%; }
+    form button { background:#0078D7; color:white; border:none; padding:0.75rem; border-radius:5px;
+                  font-size:1rem; cursor:pointer; }
+    footer { background:#222; color:white; text-align:center; padding:1rem; margin-top:2rem; }
+    @media (max-width:600px) { header h1 { font-size:1.5rem; } }
+  </style>
 </head>
 <body>
   <header>
-    <img src="logo.svg" alt="WinBoostKokkola logo">
+    <!-- Logo inline-SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 300 80">
+      <rect width="300" height="80" fill="#0078D7"/>
+      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+            font-family="Arial, sans-serif" font-size="28" fill="white">WinBoostKokkola</text>
+    </svg>
     <h1>Windows 11 päivitykset & tietokonehuolto Kokkolassa</h1>
     <p>Luotettavaa ja turvallista palvelua – varmuuskopiointi aina mukana</p>
     <a href="tel:+358440600616" class="btn">📞 Soita heti</a>
@@ -35,22 +59,10 @@
   <section id="pricing">
     <h2>Hinnasto</h2>
     <div class="pricing">
-      <div class="card">
-        <h3>Windows 10 → 11 (tuettu kone)</h3>
-        <p><strong>49 €</strong></p>
-      </div>
-      <div class="card">
-        <h3>Windows 10 → 11 (tukematon kone)</h3>
-        <p><strong>60 €</strong></p>
-      </div>
-      <div class="card">
-        <h3>Koneen nopeutus (SSD + huolto)</h3>
-        <p><strong>59 €</strong></p>
-      </div>
-      <div class="card">
-        <h3>Muut huollot / asennukset</h3>
-        <p><strong>29 €/h</strong></p>
-      </div>
+      <div class="card"><h3>Windows 10 → 11 (tuettu kone)</h3><p><strong>49 €</strong></p></div>
+      <div class="card"><h3>Windows 10 → 11 (tukematon kone)</h3><p><strong>60 €</strong></p></div>
+      <div class="card"><h3>Koneen nopeutus (SSD + huolto)</h3><p><strong>59 €</strong></p></div>
+      <div class="card"><h3>Muut huollot / asennukset</h3><p><strong>29 €/h</strong></p></div>
     </div>
   </section>
 
@@ -74,20 +86,17 @@
 
   <section id="faq">
     <h2>Usein kysytyt kysymykset</h2>
-    <p><strong>Tukeeko koneeni Windows 11:ää?</strong><br>
-    Selvitämme asian puolestasi ja kerromme, onnistuuko päivitys.</p>
-    <p><strong>Mitä jos päivitys epäonnistuu?</strong><br>
-    Palautamme koneesi Windows 10 -tilaan ja tiedostosi säilyvät.</p>
-    <p><strong>Mitä jos tiedot katoavat?</strong><br>
-    Tiedostot varmuuskopioidaan aina ennen päivitystä – ne palautetaan lopuksi.</p>
+    <p><strong>Tukeeko koneeni Windows 11:ää?</strong><br>Selvitämme asian puolestasi ja kerromme, onnistuuko päivitys.</p>
+    <p><strong>Mitä jos päivitys epäonnistuu?</strong><br>Palautamme koneesi Windows 10 -tilaan ja tiedostosi säilyvät.</p>
+    <p><strong>Mitä jos tiedot katoavat?</strong><br>Tiedostot varmuuskopioidaan aina ennen päivitystä – ne palautetaan lopuksi.</p>
   </section>
 
   <section id="contact">
     <h2>Ota yhteyttä</h2>
     <p>Puhelin: <a href="tel:+358440600616">044 060 0616</a><br>
-    Sähköposti: <a href="mailto:winboostkokkola@outlook.com">winboostkokkola@outlook.com</a></p>
-
-    <form action="https://formspree.io/f/mayvlkkp" method="POST">
+       Sähköposti: <a href="mailto:winboostkokkola@outlook.com">winboostkokkola@outlook.com</a></p>
+    <!-- Vaihda action Formspree-linkkiisi -->
+    <form action="https://formspree.io/f/OMA-LINKKI" method="POST">
       <input type="text" name="name" placeholder="Nimi" required>
       <input type="email" name="_replyto" placeholder="Sähköposti" required>
       <input type="text" name="phone" placeholder="Puhelin (valinnainen)">
@@ -97,8 +106,7 @@
   </section>
 
   <footer>
-    <p><img src="logo.svg" alt="WinBoostKokkola" style="max-height:30px"><br>
-    © 2025 WinBoostKokkola – <a href="tietosuojaseloste.html" style="color:white">Tietosuojaseloste</a></p>
+    <p>© 2025 WinBoostKokkola – <a href="tietosuojaseloste.html" style="color:white">Tietosuojaseloste</a></p>
   </footer>
 </body>
 </html>
